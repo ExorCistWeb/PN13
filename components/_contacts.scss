@@ -1,0 +1,139 @@
+.contacts {
+  background-color: #fcf6f0;
+  padding-top: 70px;
+  padding-bottom: 130px;
+  &__wrapper {
+    max-width: 1220px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    height: 540px;
+  }
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__phone {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #263520;
+  }
+  &__email {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #263520;
+  }
+  &__img {
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    color: #263520;
+    &-email {
+      margin-top: 20px;
+    }
+    &-social {
+      margin-top: 20px;
+    }
+  }
+  svg {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .contacts__title {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .contacts__item,
+  .contacts__text {
+    font-size: 21px;
+  }
+}
+@media (max-width: 1199px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .contacts__wrapper {
+    height: 400px;
+  }
+  .contacts__title {
+    font-size: 40px;
+  }
+  .contacts__item,
+  .contacts__text,
+  .contacts__phone,
+  .contacts__email {
+    font-size: 19px;
+  }
+  .contacts__img {
+    width: 500px;
+    top: -50px;
+  }
+}
+@media (max-width: 991px) {
+  .contacts__img {
+    width: 400px;
+    top: -50px;
+  }
+  .contacts__wrapper {
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .contacts__img {
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contacts__wrapper {
+    height: 850px;
+  }
+}
+@media (max-width: 575px) {
+  .contacts {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .contacts__title {
+    font-size: 25px;
+  }
+  .contacts__item,
+  .contacts__text,
+  .contacts__phone,
+  .contacts__email {
+    font-size: 16px;
+  }
+  .contacts__item {
+    padding-left: 15px;
+  }
+  .contacts__wrapper {
+    height: 620px;
+  }
+}
+@media (max-width: 375px) {
+  .contacts__title {
+    font-size: 20px;
+  }
+  .contacts__wrapper {
+    height: 550px;
+  }
+}

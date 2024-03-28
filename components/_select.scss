@@ -1,0 +1,126 @@
+.select {
+  position: relative;
+  width: 250px;
+}
+.select.is-active .select__body {
+  display: block;
+}
+
+.select__header {
+  width: 462px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  background: #fffcf9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #595b5f;
+}
+.select__current {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  span:nth-child(2) {
+    display: none;
+  }
+  br {
+    display: none;
+  }
+}
+.select__icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.select__body {
+  background: #fffcf9;
+  padding: 10px 15px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  width: 462px;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 65px;
+}
+.select__icon.is-up {
+  transform: rotate(-180deg);
+}
+.select__item {
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #595b5f;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  &:last-child {
+    border: none;
+  }
+}
+
+@media (max-width: 1650px) {
+  .select__header {
+    width: calc(400px - 30px);
+  }
+  .select__body {
+    width: 370px;
+  }
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .select__header {
+    width: 100%;
+  }
+  .select {
+    width: 100px;
+  }
+  .select__current {
+    width: 300px;
+    &-desktop {
+      display: none;
+    }
+    span:nth-child(2) {
+      display: unset;
+    }
+  }
+  .select__header {
+    padding: 0px 10px;
+    height: 36px;
+  }
+  .select__icon {
+    width: 14px;
+    height: 14px;
+  }
+  .select__body {
+    width: 240px;
+    top: 50px;
+  }
+  .select__item {
+    font-size: 17px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 575px) {
+  .select {
+    width: 88px;
+  }
+  .select__header {
+    padding: 0px 5px;
+  }
+}
+@media (max-width: 375px) {
+}

@@ -1,0 +1,41 @@
+.order__data_item {
+  input {
+    border: 1px solid #b2b2b2;
+    border-radius: 10px;
+    height: 65px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #7c7c7c;
+    padding-left: 20px;
+    background: #fffcf9;
+  }
+  label,
+  .order__data_item_label {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #263520;
+  }
+}
+@media (max-width: 1650px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .order__data_item input {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 375px) {
+  .order__data_item input {
+    font-size: 16px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+}

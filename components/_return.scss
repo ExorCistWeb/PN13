@@ -1,0 +1,132 @@
+.return {
+  background-color: #fcf6f0;
+  padding-top: 70px;
+  padding-bottom: 130px;
+  &__wrapper {
+    max-width: 1220px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    color: #263520;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    a {
+      color: #263520;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      background-color: #cbb2aa;
+    }
+  }
+  &__title-reference {
+    margin-top: 70px;
+  }
+  &__reference-text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    color: #263520;
+  }
+  &__reference {
+    list-style-type: none;
+  }
+}
+
+@media (max-width: 1650px) {
+  .return__title {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .return__title-reference {
+    font-size: 45px;
+  }
+  .return__item,
+  .return__reference-text {
+    font-size: 21px;
+  }
+  .return__item::after {
+    top: 8px;
+  }
+}
+@media (max-width: 1199px) {
+  .return {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .return__title {
+    font-size: 40px;
+  }
+  .return__title-reference {
+    font-size: 40px;
+  }
+  .return__item,
+  .return__reference-text {
+    font-size: 19px;
+  }
+  .return__item::after {
+    top: 6px;
+  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .return__title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .return__title-reference {
+    font-size: 35px;
+    text-align: center;
+  }
+  .return__item,
+  .return__reference-text {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .return {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .return__title {
+    font-size: 25px;
+  }
+  .return__title-reference {
+    font-size: 25px;
+  }
+  .return__item,
+  .return__reference-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .return__item::after {
+    width: 10px;
+    height: 10px;
+  }
+  .return__item {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .return__title {
+    font-size: 20px;
+  }
+  .return__title-reference {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+.banner {
+  background-color: #fcf6f0;
+  padding-bottom: 130px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    position: relative;
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 76px;
+    color: #263520;
+    z-index: 1;
+    &-line1,
+    &-line2 {
+      position: absolute;
+      right: -80px;
+      top: -200px;
+      z-index: -1;
+    }
+    &-line2 {
+      position: absolute;
+      right: -80px;
+      top: 250px;
+    }
+  }
+  &__right {
+    width: 769px;
+    height: 870px;
+    position: relative;
+    z-index: 2;
+    background: url("../img/header/Rectangle5.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

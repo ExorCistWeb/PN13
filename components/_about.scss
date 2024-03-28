@@ -1,0 +1,103 @@
+.about {
+  background-color: #fcf6f0;
+  padding-top: 70px;
+  text-align: center;
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 64px;
+    color: #263520;
+    margin-bottom: 30px;
+  }
+  &__descr {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #263520;
+  }
+  &__logo {
+    margin-top: 70px;
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  &__content {
+    padding-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 115px;
+    padding-bottom: 170px;
+    &-title {
+      font-family: var(--third-family);
+      font-weight: 400;
+      font-size: 48px;
+      color: #263520;
+      margin-bottom: 60px;
+    }
+    &-descr {
+      font-family: var(--font-family);
+      font-weight: 300;
+      font-size: 32px;
+      color: #57585c;
+      text-align: justify;
+    }
+  }
+  &__wrap {
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  &__items {
+    display: grid;
+    grid-template: repeat(2, minmax(520px, 600px)) / repeat(
+        2,
+        minmax(500px, 800px)
+      );
+    gap: 70px 20px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    &-content {
+      width: 770px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 46px;
+    }
+    &-num {
+      font-family: var(--third-family);
+      font-weight: 400;
+      font-size: 128px;
+      color: #263520;
+    }
+    &-descr {
+      text-align: left;
+    }
+    &-title {
+      font-family: var(--third-family);
+      font-weight: 400;
+      font-size: 32px;
+      color: #263520;
+      margin-bottom: 14px;
+    }
+    &-text {
+      font-family: var(--font-family);
+      font-weight: 300;
+      font-size: 24px;
+      color: #5c5e64;
+    }
+  }
+  &__text {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #263520;
+    padding-bottom: 170px;
+  }
+}
